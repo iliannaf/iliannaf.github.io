@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="IF">
+    <title>Ilianna Faoro - Works</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="icon" type="image/x-icon" href="logo5.png">
+</head>
+
+<body>
+
+    <header>
+        <h1>Works</h1>
+        <h4>Newest to Oldest</h4>
+    </header>
+
+    <!-- top navigation -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="works.html">Works</a>
+    </nav>
+
+    <!-- side navigation -->
+    <div class="sidenav">
+        <a href="#ThisWeb">This Website</a>
+        <a href="#SquirrelAdventure">Squirrel's Adventure</a>
+        <a href="#HypnoticFlorals">Hypnotic Florals</a>
+        <a href="#ColourCollisions">Colour Collisions</a>
+        <a href="#KefWeb">Cephalonian Association Website</a>
+        <a href="#DeityDash">Deity Dash</a>
+        <a href="#DigitalRuin">Digital Ruin</a>
+    </div>
+
+    <!-- when pic is opened/closed -->
+    <script>
+        function openModal(modalId, caption) {
+        let modal = document.getElementById(modalId);
+        modal.style.display = "flex";
+        modal.classList.add("show");
+        let message = modal.querySelector(".caption");
+        message.innerText = caption;
+        }
+
+        function closeModal(modalId) {
+        let modal = document.getElementById(modalId);
+        modal.classList.remove("show");
+        setTimeout(function () {
+        modal.style.display = "none";
+        modal.querySelector(".caption").innerText = "";
+        }, 300);
+        }
+    </script>
+
+    <main>
+        <!-- Portfolio Website Section -->
+        <section id="ThisWeb" class="section">
+            <h2>This Website</h2>
+
+            <h6>February 2026</h6>
+            <h5>HTML, CSS and JS</h5>
+
+            <p>I created this website to contain some of my previous artworks and act as my portfolio. 
+            Using online resources, I had been teaching myself HTML, CSS and JavaScript and this was the first time that I made something of this scale using what I had learned. 
+            The process of making this website allowed me to learn more about web design and web development. 
+            It also drove me to find solutions to problems within my code that I had never run into before. 
+            In the future, I would like to continue to improve my coding abilities, so that I can create better and more complex websites for future projects.
+            </p>
+        </section>
+
+        <!-- Unity Section -->
+        <section id="SquirrelAdventure" class="section">
+
+            <h2>Squirrel's Adventure</h2>
+
+            <h6>December 2025</h6>
+            <h5>Unity and C#</h5>
+
+            <div class="gallery">
+
+                <img src="Squirrel 1.png" class="gallery-item" onclick="openModal('modal1')" width="600" height="400">
+                <img src="squirrel 2.png" class="gallery-item" onclick="openModal('modal2')" width="600" height="400">
+                <img src="squirrel 3.png" class="gallery-item" onclick="openModal('modal3')" width="600" height="400">
+            </div>
+
+            <div id="modal1" class="modal">
+
+                <span class="close" onclick="closeModal('modal1')">&times;</span>
+                <img src="Squirrel 1.png" class="modal-content" width="600" height="400">
+
+            </div>
+
+            <div id="modal2" class="modal">
+
+                <span class="close" onclick="closeModal('modal2')">&times;</span>
+                <img src="squirrel 2.png" class="modal-content" width="600" height="400">
+
+            </div>
+
+            <div id="modal3" class="modal">
+
+                <span class="close" onclick="closeModal('modal3')">&times;</span>
+                <img src="squirrel 3.png" class="modal-content" width="600" height="400">
+
+            </div>
+
+            <div class="videoContainer">
+            <video class="video1" width="415" height="236" controls>
+                <source src="Squirrel's Adventure Clip.mp4" type="video/mp4">
+            </video>
+            </div>
+
+            <div class="p1">
+                <p>I made this video game as my final project for one of my college courses about game making and it was the first video game that I have ever made of this size. 
+                    My intention for this project was to create a game that anyone of any age could play and enjoy, similar to other nostalgic video games that I grew up playing with my friends and family. 
+                    Creating this game was my first experience making a game using Unity and C#, and throughout the process I had to learn a lot about both, in order to realize my vision. 
+                    I have always loved video games and gaming in general, so creating this game has inspired me to continue to pursue game making. 
+                </p>
+            </div>
+
+            <h6><a href="https://ili-f.itch.io/squirrels-adventure">Play Squirrel's Adventure</a></h6>
+
+        </section>
+
+        <!-- p5.js Section -->
+        <section id="HypnoticFlorals" class="section">
+            <h2>Hypnotic Florals</h2>
+
+            <h6>December 2025</h6>
+            <h5>P5.js</h5>
+
+            <div class="gallery">
+
+                <img src="floral 1.png" class="gallery-item" onclick="openModal('modal4')" width="600" height="400">
+                <img src="floral 2.png" class="gallery-item" onclick="openModal('modal5')" width="600" height="400">
+            </div>
+
+            <div id="modal4" class="modal">
+
+                <span class="close" onclick="closeModal('modal4')">&times;</span>
+                <img src="floral 1.png" class="modal-content" width="600" height="400">
+
+            </div>
+
+            <div id="modal5" class="modal">
+
+                <span class="close" onclick="closeModal('modal5')">&times;</span>
+                <img src="floral 2.png" class="modal-content" width="600" height="400">
+
+            </div>
+
+            <div class="videoContainer">
+            <video class="video2" width="500" height="300" controls>
+                <source src="Hypnotic Florals.mp4" type="video/mp4">
+            </video>
+            </div>
+
+            <div class="p2">
+                <p>I made this piece as my final project for one of my college courses about interactive media and it was my second time making an artwork using text-based code. 
+                    The idea for this piece was inspired by kaleidoscopic imagery, as well as wanting to create something visually stimulating that also had optional interactive elements. 
+                    I wanted the user to be mesmerized by the flowing shapes and colours, as they move around and blend into one another. 
+                    While making this project, I learned more about coding using P5.js and interactive artworks. 
+                    In the future, I'd like to continue to pursue creating interactive media using code, so this experience was very helpful in showing me the possibilities of what I might be able to do.
+                </p>
+            </div>
+
+            <h6><a href="https://editor.p5js.org/IliannaF/full/r7a7oV0gO">Hypnotic Florals</a></h6>
+
+        </section>
+
+        <!-- MaxSMP Section -->
+        <section id="ColourCollisions" class="section">
+            <h2>Colour Collisions</h2>
+
+            <h6>May 2025</h6>
+            <h5>Max</h5>
+
+            <div class="gallery">
+
+                <img src="max.png" class="gallery-item" onclick="openModal('modal6')" width="600" height="400">
+            </div>
+
+            <div id="modal6" class="modal">
+
+                <span class="close" onclick="closeModal('modal6')">&times;</span>
+                <img src="max.png" class="modal-content" width="600" height="400">
+
+            </div>
+
+            <div class="videoContainer">
+            <video class="video3" width="415" height="232" controls>
+                <source src="Colour Collisions.mp4" type="video/mp4">
+            </video>
+            </div>
+
+            <div class="p3">
+                <p>I made this piece as my final project for one of my college courses about interactive media and it was the first artwork I ever made using Max. 
+                I have always liked the idea of generative and randomized artworks, because I find it interesting to look at an artwork knowing that it will have a different result every time someone sees it. 
+                I wanted the user to be captivated by the shapes and colours constantly in motion and merging together as they connect. 
+                Throughout the process of making this piece, I learned a lot more about the capabilities of Max and got ideas of other things that I could use the software to create in the future. 
+                </p>
+            </div>
+
+        </section>
+
+        <!-- Kef Website Section -->
+        <section id="KefWeb" class="section">
+            <h2>Cephalonian Association Website</h2>
+
+            <h6>February 2025</h6>
+            <h5>Google Sites</h5>
+
+            <div class="videoContainer">
+                <img src="website.png" class="pic1" onclick="openModal('modal7')" width="720" height="400">
+            </div>
+
+            <div id="modal7" class="modal">
+
+                <span class="close" onclick="closeModal('modal7')">&times;</span>
+                <img src="website.png" class="modal-content" width="720" height="400">
+
+            </div>
+
+                <div class="p4">
+                    <p>I made this website for a non-profit cultural association at which I volunteer. 
+                        We spoke about expanding our online presence and mentioned how it would be nice to have a website. 
+                        I had never made a website before, but I had been interested in web design for a while, so I decided to give it a try. 
+                        The intention for the website is to inform viewers about what the association is and does, as well as let people know about past and upcoming events. 
+                        This experience inspired me to learn more about web design, as well as UI and UX. 
+                        It also got me interested in learning HTML and CSS, in order to one day create other websites without needing to use an online website builder.
+                    </p>
+                </div>
+
+                <h6><a href="https://www.cephalonianmtl.com/home">Cephalonian Association Website</a></h6>
+
+        </section>
+
+        <!-- Board Game Section -->
+        <section id="DeityDash" class="section">
+            <h2>Deity Dash</h2>
+
+            <h6>December 2024</h6>
+            <h5>Board Game</h5>
+            <h3>Made In Collaboration With:</h3>
+            <h3>Sabrina Rath and Zeina Hussein</h3>
+
+            <div class="gallery">
+
+                <img src="DDlogo.png" class="gallery-item" onclick="openModal('modal8')" width="600" height="400">
+                <img src="cards and tokens.png" class="gallery-item" onclick="openModal('modal9')" width="600" height="400">
+                <img src="characters and boats.png" class="gallery-item" onclick="openModal('modal10')" width="600" height="400">
+                <img src="game board.png" class="gallery-item" onclick="openModal('modal11')" width="600" height="400">
+            </div>
+
+            <div id="modal8" class="modal">
+
+                <span class="close" onclick="closeModal('modal8')">&times;</span>
+                <img src="DDlogo.png" class="modal-content" width="600" height="400">
+
+            </div>
+
+            <div id="modal9" class="modal">
+
+                <span class="close" onclick="closeModal('modal9')">&times;</span>
+                <img src="cards and tokens.png" class="modal-content" width="600" height="400">
+
+            </div>
+
+            <div id="modal10" class="modal">
+
+                <span class="close" onclick="closeModal('modal10')">&times;</span>
+                <img src="characters and boats.png" class="modal-content" width="600" height="400">
+
+            </div>
+
+            <div id="modal11" class="modal">
+
+                <span class="close" onclick="closeModal('modal11')">&times;</span>
+                <img src="game board.png" class="modal-content" width="600" height="400">
+
+            </div>
+
+            <div class="p5">
+                <p>I made this board game as my final project for one of my college courses about game design. 
+                    This game was created in collaboration with two of my classmates, one of which was very interested in Greek mythology, so we drew inspiration from the Odyssey for the plot of our game. 
+                    We wanted to make this board game accessible and fun for all ages, with fun and simple artwork that adds to the experience. 
+                    Throughout making this game, I learned what elements are required to make a good board game. 
+                    In the future, I would like to continue to explore game design with both physical and digital games. 
+                </p>
+            </div>
+
+        </section>
+
+        <!-- Photoshop Section -->
+        <section id="DigitalRuin" class="section">
+            <h2>Digital Ruin</h2>
+
+            <h6>December 2024</h6>
+            <h5>Adobe Photoshop</h5>
+
+            <div class="videoContainer">
+                <img src="Faoro_Ilianna_Digital_You.gif" class="pic1" onclick="openModal('modal12')" width="720" height="500">
+            </div>
+
+            <div id="modal12" class="modal">
+
+                <span class="close" onclick="closeModal('modal12')">&times;</span>
+                <img src="Faoro_Ilianna_Digital_You.gif" class="modal-content" width="720" height="500">
+
+            </div>
+
+            <div class="p6">
+                <p>I made this piece as my final project for one of my college courses about digital art, and it was one of the first projects I made using Photoshop. 
+                The assignment was to create an artwork that depicted the future, so I decided to create a representation of a dystopian future ruled by technology. 
+                I wanted the viewer to reflect on the role technology has in our society, how it continues to grow and the possible consequences. 
+                Throughout the process of creating this piece, I learned more about Photoshop techniques and how to convey messages through art. 
+                In the future, I would like to continue to use applications like Photoshop to create new artworks and further explore graphic design.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© Ilianna Faoro 2026</p>
+    </footer>
+
+</body>
+
+</html>
